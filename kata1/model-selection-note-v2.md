@@ -40,7 +40,7 @@ Make the output 3-5 sentences only
 > Okay, the user wants a test plan to validate data after moving from Oracle to Azure Synapse. The key points are ensuring no data loss, checking nulls, data types with precision, using the smallest possible types, and comparing source and target sizes.
 First, I need to check row counts and null values. So, for each table, compare the count in Oracle and Synapse. Also, check if any non-nullable columns in Oracle have nulls in Synapse. That covers d
 
-### Model B: Anthropic Opus 4.5
+### Model B: Anthropic Sonnet 4.5
 > Data Integration Validation is a systematic testing framework that ensures zero data loss between Oracle source and Azure Synapse target by comparing row counts, checksums, and performing null validation to verify NULL values are correctly preserved or transformed during migration. The plan includes a standardized datatype mapping reference (e.g., Oracle NUMBER(10,2) to Synapse DECIMAL(10,2), CLOB to VARCHAR(MAX)) with defined precisions, prioritizing the smallest viable datatype to optimize storage efficiency. Source and target size comparisons validate both record counts and column-level byte allocations to detect truncation or overflow issues. Null distribution checks ensure that nullable columns maintain data consistency and that no unintended NULL injection or elimination occurs post-integration.
 
 ---
@@ -59,9 +59,9 @@ First, I need to check row counts and null values. So, for each table, compare t
 
 ## Decision
 
-**Selected model:** Anthropic Opus 4.5
+**Selected model:** Anthropic Sonnet 4.5
 
-**Rationale:** Both look good by the Opus includes standartization approach
+**Rationale:** Both look good by the Sonnet includes standartization approach
 
 ---
 

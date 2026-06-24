@@ -77,3 +77,4 @@ First, I need to check row counts and null values. So, for each table, compare t
 | Version | Date | Change |
 |---------|------|--------|
 | 1.0 | 2026-06-23 | Initial commit |
+| 1.1 | 2026-06-24 | Added peer-review comment  |
